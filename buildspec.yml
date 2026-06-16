@@ -13,6 +13,7 @@ phases:
     commands:
       - pnpm build
 
-  post_build:
-    commands:
-      - aws s3 sync dist/ s3://react_source/ --delete
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
