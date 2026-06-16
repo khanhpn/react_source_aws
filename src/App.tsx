@@ -39,11 +39,26 @@ function App() {
       <Container maxWidth="xs">
         <Card sx={{ borderRadius: 4, boxShadow: 6 }}>
           <CardContent sx={{ p: 4 }}>
-            <Typography variant="h4" fontWeight={700} textAlign="center" mb={1}>
+            <Typography
+              variant="h4"
+              component="h1"
+              sx={{
+                fontWeight: 700,
+                textAlign: "center",
+                mb: 1
+              }}
+            >
               Login
             </Typography>
 
-            <Typography color="text.secondary" textAlign="center" mb={4}>
+            <Typography
+              color="text.secondary"
+              component="p"
+              sx={{
+                textAlign: "center",
+                mb: 4
+              }}
+            >
               Sign in to continue
             </Typography>
 

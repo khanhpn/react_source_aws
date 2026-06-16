@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 22
+    commands:
+      - corepack enable
+      - corepack prepare pnpm@10.33.0 --activate
+      - pnpm install --frozen-lockfile
+
+  build:
+    commands:
+      - pnpm build
+
+  post_build:
+    commands:
+      - aws s3 sync dist/ s3://react_source/ --delete
