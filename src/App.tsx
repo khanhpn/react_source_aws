@@ -65,7 +65,7 @@ function App() {
             <Box component="form" onSubmit={handleSubmit}>
               <TextField
                 fullWidth
-                label="Email"
+                label="Email1"
                 type="email"
                 margin="normal"
                 value={email}
@@ -84,7 +84,7 @@ function App() {
 
               <TextField
                 fullWidth
-                label="Password"
+                label="Password1"
                 type="password"
                 margin="normal"
                 value={password}
