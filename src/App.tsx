@@ -9,7 +9,7 @@ import {
   FormControlLabel,
   TextField,
   Typography,
-  InputAdornment
+  InputAdornment,
 } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import LockIcon from "@mui/icons-material/Lock";
@@ -23,7 +23,7 @@ function App() {
 
     console.log({
       email,
-      password
+      password,
     });
   };
 
@@ -33,7 +33,7 @@ function App() {
         minHeight: "100vh",
         bgcolor: "#f5f7fb",
         display: "flex",
-        alignItems: "center"
+        alignItems: "center",
       }}
     >
       <Container maxWidth="xs">
@@ -45,7 +45,7 @@ function App() {
               sx={{
                 fontWeight: 700,
                 textAlign: "center",
-                mb: 1
+                mb: 1,
               }}
             >
               Login
@@ -56,7 +56,7 @@ function App() {
               component="p"
               sx={{
                 textAlign: "center",
-                mb: 4
+                mb: 4,
               }}
             >
               Sign in to continue
@@ -65,7 +65,7 @@ function App() {
             <Box component="form" onSubmit={handleSubmit}>
               <TextField
                 fullWidth
-                label="Email"
+                label="Email User"
                 type="email"
                 margin="normal"
                 value={email}
@@ -77,8 +77,8 @@ function App() {
                       <InputAdornment position="start">
                         <EmailIcon />
                       </InputAdornment>
-                    )
-                  }
+                    ),
+                  },
                 }}
               />
 
@@ -96,8 +96,8 @@ function App() {
                       <InputAdornment position="start">
                         <LockIcon />
                       </InputAdornment>
-                    )
-                  }
+                    ),
+                  },
                 }}
               />
 
